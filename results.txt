@@ -1,0 +1,22 @@
+Sag solver method for logistic regression is incredibly slow to run locally on CPU and ran out of iterations. 
+
+Random Forest Classifier:
+Accuracy: 0.9367310830068915
+
+
+ Class Reprort: 
+              precision    recall  f1-score   support
+
+           1       0.95      0.92      0.94     52960
+           2       0.93      0.96      0.95     70825
+           3       0.92      0.94      0.93      8938
+           4       0.89      0.79      0.84       687
+           5       0.93      0.74      0.82      2373
+           6       0.89      0.84      0.87      4342
+           7       0.97      0.94      0.95      5128
+
+    accuracy                           0.94    145253
+   macro avg       0.93      0.88      0.90    145253
+weighted avg       0.94      0.94      0.94    145253
+
+Wasted too much time trying to make the logistic regression good, RF classifier is just miles better with this dataset.
