@@ -15,7 +15,7 @@ from sklearn.ensemble import RandomForestClassifier
 import joblib
 
 
-df = pd.read_csv("covertype.csv")
+df = pd.read_csv("data/covertype.csv")
 
 #print(df.shape)
 
@@ -57,7 +57,7 @@ for x in range(0, 4): # I forgot to add a try-except wrapper but definetely do s
         best_report = classification_report(y_test, log_y_pred)
         matrix = confusion_matrix(y_test, log_y_pred)
 
-        joblib.dump(lr, 'logistic_regression_model.joblib')
+        joblib.dump(lr, 'models/logistic_regression_model.joblib')
 
         plt.figure(figsize=(10, 8))
         sns.heatmap(matrix, annot=True, fmt='d', cmap='Blues')
